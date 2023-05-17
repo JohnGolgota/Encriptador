@@ -62,7 +62,7 @@ function validarTexto() {
     let text = textArea.value;
     // TODO investigar regex
     // Remover las vocales con tilde
-    let textClean = text.replace(/[^A-Za-z0-9]/g, '');
+    let textClean = text.replace(/[^A-Za-z0-9+\s+]/g, '');
 
     if (text !== textClean) {
         textArea.value = textClean;
