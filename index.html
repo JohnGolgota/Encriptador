@@ -24,7 +24,7 @@
     </header>
     <main>
         <section class="bd_ma_se">
-            <textarea class="bd_ma_se_textarea" id="textareaInput" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <textarea class="bd_ma_se_textarea" id="textareaInput" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar." onkeyup="validarTexto()"></textarea>
 
             <div class="bd_ma_se_description">
 
@@ -34,16 +34,16 @@
             </div>
 
             <div class="bd_ma_se_btns">
-                <button class="bd_ma_se_btns_btn_encript" onclick="btnEncript()">
+                <button id="btnEncriptRequest" class="bd_ma_se_btns_btn_encript">
                     Encriptar
                 </button>
-                <button class="bd_ma_se_btns_btn_dencript" onclick="btnDencript()">
+                <button id="btnDencriptRequest" class="bd_ma_se_btns_btn_dencript">
                     Desencriptar
                 </button>
             </div>
         </section>
         <aside class="bd_ma_asi">
-            <textarea class="bd_ma_asi_textarea" cols="30" rows="10"></textarea>
+            <textarea class="bd_ma_asi_textarea" id="textareaoutput" cols="30" rows="10"></textarea>
             <button id="copy" class="bd_ma_asi_btn" onclick="copiar()">
                 Copiar
             </button>
