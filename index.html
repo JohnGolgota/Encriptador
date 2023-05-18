@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a160a18f4.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -24,7 +25,10 @@
     </header>
     <main>
         <section class="bd_ma_se">
-            <textarea class="bd_ma_se_textarea" id="textareaInput" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar." onkeyup="validarTexto()"></textarea>
+            <div class="bd_ma_con_req">
+                <textarea class="bd_ma_se_textarea" id="textareaInput" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar." onkeyup="validarTexto()"></textarea>
+                <button class="bd_ma_se_btn_paste"><i class="fa-solid fa-paste"></i></button>
+            </div>
 
             <div class="bd_ma_se_description">
 

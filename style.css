@@ -18,7 +18,9 @@ body {
 main {
     display: flex;
 }
-
+.bd_ma_con_req {
+    position: relative;
+}
 .bd_ma_se_textarea {
     border: none;
     color: #093974;
@@ -35,7 +37,6 @@ main {
     color: #0A3871;
     font-size: 40px;
 }
-
 .bd_ma_se_textarea:focus {
     outline: none;
 }
@@ -62,8 +63,7 @@ main {
     width: 328px;
     height: 67px;
     margin-bottom: 50px;
-    color: white;
-    background-color: #0A3871;
+    color: #0A3871;
     cursor: pointer;
     border-radius: 20px;
     padding: auto;
@@ -81,8 +81,7 @@ main {
 .bd_ma_se_btns_btn_dencript {
     width: 328px;
     height: 67px;
-    color: white;
-    background-color: #0A3871;
+    color: #0A3871;
     cursor: pointer;
     border-radius: 20px;
     padding: auto;
@@ -104,6 +103,8 @@ main {
 
 .bd_ma_asi_textarea {
     background-image: url(./assets/Muñeco.png);
+    word-wrap: break-word;
+    overflow-y: scroll;
     position: absolute;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -195,7 +196,6 @@ footer img {
     }
 
     .bd_ma_se_textarea {
-        position: static;
         width: 70%;
         height: 200px;
         margin-top: 23%;
@@ -255,7 +255,7 @@ footer img {
         font-size: 28px;
         font-weight: bold;
         font-style: italic;
-        color: #ffffff;
+        color: #0A3871;
         padding: 30px;
         padding-top: 20px
     }
@@ -294,7 +294,6 @@ footer img {
     }
 
     .bd_ma_se_textarea {
-        position: static;
         width: 70%;
         height: 40%;
         margin-top: 15%;

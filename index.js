@@ -30,7 +30,6 @@ function btnEncript(action) {
     resMessage.innerHTML = textoEncriptado;
     textArea.value = "";
     resMessage.style.backgroundImage = "none";
-    actionCopy.style.display = "show";
     actionCopy.style.display = "inherit";
 }
 
@@ -66,7 +65,12 @@ function validarTexto() {
 
     if (text !== textClean) {
         textArea.value = textClean;
-        // alert('No se permiten caracteres especiales como vocales con tilde.');
+        swal({
+            title: "Bueno...",
+            text: "No se permiten caracteres especiales",
+            icon: "info",
+            buttons: false
+        })
     }
 }
 
@@ -76,7 +80,7 @@ function copiar() {
     navigator.clipboard.writeText(texto)
         .then(() => {
             swal({
-                title: "bien",
+                title: "Bien",
                 text: "Se copió con exito",
                 icon: "success",
                 buttons: false
