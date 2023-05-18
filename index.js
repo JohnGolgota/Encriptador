@@ -87,3 +87,8 @@ function copiar() {
             })
         })
 }
+// Queria usar async y await en algo xd
+async function pegar() {
+    let a = await navigator.clipboard.readText()
+    textArea.value += a;
+}
